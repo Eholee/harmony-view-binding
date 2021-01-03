@@ -53,7 +53,7 @@ buildscript {
        
 4. 在需要填充布局的地方使用
    主要是两个api：1. binding = AbilityMainBinding.parse(this); 2. binding.getRoot()
-``` java     ` 
+``` java     
 public class MainAbilitySlice extends AbilitySlice {
     private AbilityMainBinding binding;
     @Override
@@ -80,7 +80,7 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 }
 ```
-    ` 
+
 ### 可选项
 1. 提供设置根布局api 
     ``` java 
