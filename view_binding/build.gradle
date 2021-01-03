@@ -23,12 +23,10 @@ dependencies {
     implementation 'com.squareup:javapoet:1.11.1'
 }
 
-
-
 publish {
     groupId = "com.eholee.plugin"
     artifactId = "view-binding"
-    publishVersion = "0.0.2-alpha"
+    publishVersion = "1.0.1"
     //项目描述
     desc = 'view-binding for harmony'
     //项目网址
