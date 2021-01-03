@@ -36,7 +36,7 @@ publish {
     //bintray 用户名
     userOrg = 'eholee'
     //API Key
-    bintrayKey = BINTRAY_KEY
+    bintrayKey = "**********"
     dryRun = false
 }
 
