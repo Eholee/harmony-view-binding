@@ -88,19 +88,19 @@ public class MainAbilitySlice extends AbilitySlice {
     ```
 2. 支持feature模块view-binding功能的开启与关闭：
    feature中的build.gradle中设置
+  ``` gradle 
         viewBinding{
             enable false 
             // false为关闭，插件将不会解析该feature所有的xml布局文件，
             //true为开启，插件将会解析该feature下所有的xml布局文件
         }
+  ```
 3. 支持针对单个xml布局文件开启与关闭view-binding功能
      默认是都开启，如需关闭，需在xml根节点中加入如下信息：
 ``` xml 
    xmlns:eholee="http://schemas.eholee.com/viewbinding"
    eholee:view_binding="false"
-```
    示例：
-``` xml 
    <?xml version="1.0" encoding="utf-8"?>
    <DirectionalLayout
         xmlns:ohos="http://schemas.huawei.com/res/ohos"
@@ -115,6 +115,11 @@ public class MainAbilitySlice extends AbilitySlice {
 ```
 ------
 ### 请作者喝杯咖啡
+
+
+#### 参考
+1. Android ViewBinding
+2. com.huawei.ohos:hap:2.4.0.1 插件api
 
 #### LICENSE
 Apache License 2.0
