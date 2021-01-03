@@ -1,4 +1,5 @@
 # harmony-view-binding
+  最新版本：1.0.1
   已同步[码云](https://gitee.com/jeffer_s/harmony-view-binding)仓库
 ------
 
