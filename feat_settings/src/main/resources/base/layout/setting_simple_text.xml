@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DirectionalLayout
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:eholee="http://schemas.eholee.com/viewbinding"
+    eholee:view_binding="false"
     ohos:height="match_content"
     ohos:width="match_parent"
     ohos:background_element="$color:colorCardViewBg"

@@ -1,10 +1,15 @@
 apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.eholee.plugin.view-binding'
+
 ohos {
     compileSdkVersion 4
     defaultConfig {
         compatibleSdkVersion 3
     }
     
+}
+viewBinding{
+    enable true
 }
 
 dependencies {
