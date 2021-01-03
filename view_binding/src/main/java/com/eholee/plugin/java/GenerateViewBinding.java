@@ -22,7 +22,7 @@ public class GenerateViewBinding {
         if (enable) {
 
             // step1  遍历src/main/resources/base/layout 目录下xml文件名并解析出所有组件ID
-
+            componentIds.clear();
             String layoutDir = project.getProjectDir().getAbsolutePath() + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "base" + File.separator + "layout";
             File layoutDirFile = new File(layoutDir);
             if (layoutDirFile.exists()) {
