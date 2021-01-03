@@ -34,7 +34,7 @@ buildscript {
 }
 ```
 2. 在feature模块的build.gradle文件中引入view-binding插件
-``` gradle   ` 
+``` gradle   
     apply plugin: 'com.huawei.ohos.hap'
     apply plugin: 'com.eholee.plugin.view-binding'
     ohos {
@@ -47,7 +47,7 @@ buildscript {
     dependencies {
         ...
     }
-````
+```
 3. 执行gradle sync 即可自动生成ViewBinding类，生成目录在feature中的build/generated/source/viewBinding中，
        类的命名方法通过获得xml布局文件名后遵循大驼峰法（Upper Camel Case）并追加Binding后缀，如：MainAblityBinding
        
