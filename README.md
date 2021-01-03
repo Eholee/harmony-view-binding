@@ -6,7 +6,7 @@
     - 无注解、编译期间生成Binding类文件
 
 ##### 怎么用？
-    step1.在project根目录的build.gradle文件中引入view-binding的maven仓库地址和classpath
+    1. 在project根目录的build.gradle文件中引入view-binding的maven仓库地址和classpath
     ``` gradle
     buildscript {
         repositories {
@@ -29,4 +29,4 @@
         }
     }
     ```
-    step2. 在feature模块的build.gradle文件中引入view-binding插件
+    2. 在feature模块的build.gradle文件中引入view-binding插件
