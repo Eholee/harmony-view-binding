@@ -115,7 +115,7 @@ public class MainAbilitySlice extends AbilitySlice {
 ```
 ------
 ### 请作者喝杯咖啡
-
+<img src="https://github.com/Eholee/harmony-view-binding/blob/master/coffee.png" width=100 height=100 />
 
 #### 参考
 1. Android ViewBinding
