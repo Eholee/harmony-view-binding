@@ -1,0 +1,39 @@
+{
+  "app": {
+    "bundleName": "com.eholee.viewbindingtest",
+    "vendor": "eholee",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.eholee.feat_settings",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "feat_settings",
+      "moduleType": "feature"
+    },
+    "abilities": [
+      {
+        "visible": true,
+        "name": "com.eholee.feat_settings.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "feat_settings",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
