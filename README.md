@@ -122,5 +122,5 @@ public class MainAbilitySlice extends AbilitySlice {
 2. com.huawei.ohos:hap:2.4.0.1 插件api
 
 #### LICENSE
-Apache License 2.0
+[Apache License 2.0](https://github.com/Eholee/harmony-view-binding/blob/master/LICENSE)
 
