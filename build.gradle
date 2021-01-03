@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.huawei.ohos.app'
+
+ohos {
+    compileSdkVersion 4
+    defaultConfig {
+        compatibleSdkVersion 3
+    }
+}
+	
+buildscript {
+    repositories {
+        maven {
+            url 'https://mirrors.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+
+		jcenter()
+        maven{
+            url 'https://dl.bintray.com/eholee/maven'
+        }
+    }
+    dependencies {
+        classpath 'com.huawei.ohos:hap:2.4.0.1'
+        // view-binding
+        classpath 'com.eholee.plugin:view-binding:0.0.2-alpha'
+        //引入bintray-release 用于上传gradle插件到Bintray
+        classpath 'com.novoda:bintray-release:0.9.2'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://mirrors.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+		jcenter()
+    }
+    //添加 utf-8 的支持，避免中文注释生成 Javadoc 文件出现编码错误
+    tasks.withType(Javadoc){
+        options{
+            encoding "UTF-8"
+            charSet 'UTF-8'
+            links "http://docs.oracle.com/javase/7/docs/api"
+        }
+    }
+}

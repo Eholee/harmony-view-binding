@@ -1,0 +1,48 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'groovy'
+    id 'maven-publish'
+}
+//使用 bintray-release 插件
+apply plugin: 'com.novoda.bintray-release'
+gradlePlugin {
+    plugins {
+        // 声明插件信息
+        viewBinding {
+            // 插件ID
+            id = 'com.eholee.plugin.view-binding'
+            // 插件的实现类
+            implementationClass = 'com.eholee.plugin.view_binding.ViewBinding'
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.squareup:javapoet:1.11.1'
+}
+
+
+
+publish {
+    groupId = "com.eholee.plugin"
+    artifactId = "view-binding"
+    publishVersion = "0.0.2-alpha"
+    //项目描述
+    desc = 'view-binding for harmony'
+    //项目网址
+    website = 'https://github.com/Eholee/harmony-view-binding'
+    //bintray 的用户名
+    bintrayUser = 'eholee'
+    //bintray 用户名
+    userOrg = 'eholee'
+    //API Key
+    bintrayKey = BINTRAY_KEY
+    dryRun = false
+}
+
+
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
