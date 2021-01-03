@@ -1,4 +1,5 @@
 # harmony-view-binding
+[码云同步仓库](https://gitee.com/jeffer_s/harmony-view-binding)
 ------
 
 ### 是什么？
